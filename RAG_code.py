@@ -97,7 +97,7 @@ def load_faiss_index(file_path, dimension):
 def send_to_botpress(response, user_id):
     try:
         botpress_token = "bt-43455666543ae234"
-        botpress_url = "https://your-botpress-instance.com/api/v1/chat/sendMessage"
+        botpress_url = "https://botpress-instance.com/api/v1/chat/sendMessage"
         headers = {"Authorization": f"Bearer {botpress_token}", "Content-Type": "application/json"}
         payload = {"userId": user_id, "message": response}
         
